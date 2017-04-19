@@ -1,7 +1,7 @@
-package org.springTest.services;
+package org.springtest.services;
 
-import org.springTest.model.Circle;
-import org.springTest.model.Triangle;
+import org.springtest.model.Circle;
+import org.springtest.model.Triangle;
 
 public class ShapeService {
 

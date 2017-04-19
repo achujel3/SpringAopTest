@@ -1,6 +1,6 @@
-package org.springTest.main;
+package org.springtest.main;
 
-import org.springTest.services.ShapeService;
+import org.springtest.services.ShapeService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

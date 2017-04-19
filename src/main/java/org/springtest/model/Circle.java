@@ -1,4 +1,4 @@
-package org.springTest.model;
+package org.springtest.model;
 
 public class Circle {
 

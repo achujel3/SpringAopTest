@@ -5,16 +5,16 @@
 
     <aop:aspectj-autoproxy/>
 
-    <bean id="circle" class="org.springTest.model.Circle">
+    <bean id="circle" class="org.springtest.model.Circle">
         <property name="name" value="Circle name"/>
     </bean>
 
-    <bean id="triangle" class="org.springTest.model.Triangle">
+    <bean id="triangle" class="org.springtest.model.Triangle">
         <property name="name" value="Triangle name"/>
     </bean>
 
-    <bean id="shapeService" class="org.springTest.services.ShapeService" autowire="byName"/>
+    <bean id="shapeService" class="org.springtest.services.ShapeService" autowire="byName"/>
 
-    <bean id="loggingAspect" class="org.springTest.aspects.LoggingAspect" />
+    <bean id="loggingAspect" class="org.springtest.aspects.LoggingAspect" />
 
 </beans>
