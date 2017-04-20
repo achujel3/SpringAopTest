@@ -17,4 +17,12 @@
 
     <bean id="loggingAspect" class="org.springtest.aspects.LoggingAspect" />
 
+    <aop:config>
+        <aop:aspect id="loggingAspect" ref="loggingAspect" >
+            <aop:around method="myAroundAdvice" pointcut="execution(* get*())" />
+
+        </aop:aspect>
+
+    </aop:config>
+
 </beans>

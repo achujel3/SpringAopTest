@@ -4,12 +4,9 @@ import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.AfterThrowing;
-import org.aspectj.lang.annotation.Around;
-import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 
-@Aspect
 public class LoggingAspect {
 
     @Before("allCircleMethods()")
@@ -29,7 +26,6 @@ public class LoggingAspect {
         System.out.println("An exception has been thrown " + ex);
     }
 
-    @Around("@annotation(org.springtest.aspects.Loggable)")
     public Object myAroundAdvice(ProceedingJoinPoint proceedingJoinPoint) {
 
         Object returnValue = null;
